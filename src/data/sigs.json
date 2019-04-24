@@ -1,0 +1,10 @@
+[
+  { "name": "API", "icon": "extension", "to": "/api" },
+  { "name": "Big Data & AI", "icon": "timeline", "to": "/ai" },
+  { "name": "Cloud", "icon": "cloud", "to": "/cloud" },
+  { "name": "Commerce", "icon": "shopping_cart", "to": "/commerce" },
+  { "name": "DevOps", "icon": "build", "to": "/devops" },
+  { "name": "Mobile", "icon": "smartphone", "to": "/mobile" },
+  { "name": "VR/AR", "icon": "rounded_corner", "to": "/vrar" },
+  { "name": "WebDev", "icon": "code", "to": "/webdev" }
+]

@@ -1,6 +1,13 @@
 # openlab
 
 ## Project setup
+
+**Node**: v11.11.0
+
+**NPM**: 6.7.0
+
+Use [nvm](https://github.com/creationix/nvm) to manage node versions.
+
 ```
 yarn install
 ```
