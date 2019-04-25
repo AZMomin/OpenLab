@@ -4,7 +4,8 @@
       v-model="drawer"
       clipped
       temporary
-      app>
+      app
+    >
     <v-img
       :src="image"
       height="100%"
