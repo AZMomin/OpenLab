@@ -140,9 +140,9 @@ export default {
           sortable: true,
           value: 'title'
         },
-        { text: 'SIG', value: 'sig', },
+        { text: 'SIG', value: 'sig' },
         { text: 'Level', value: 'level' },
-        { text: 'Date Earned', value: 'dateEarned', sortable: false },
+        { text: 'Date Earned', value: 'dateEarned', sortable: false }
       ],
       autoUpdate: true,
       selectedUsers: [],
@@ -157,15 +157,15 @@ export default {
         { user: { name: 'Phil Shon', practice: 'ABI', numBadges: 7, id: 6 } }
       ],
       labs: [
-        { title: 'AWS EMR', desc: 'Sentiment Analysis', sig: 'Big Data & AI', level: 'Beginner', dateEarned:'2019-01-01' },
+        { title: 'AWS EMR', desc: 'Sentiment Analysis', sig: 'Big Data & AI', level: 'Beginner', dateEarned: '2019-01-01' },
         { title: 'AWS SageMaker', desc: 'Document Typing', sig: 'Big Data & AI', level: 'Intermediate', dateEarned: '2019-02-02' },
-        { title: 'Apache Cassandra Certification', desc: 'Airline Streaming', sig: 'Big Data & AI', level: 'Beginner', dateEarned:'2019-03-03'  },
+        { title: 'Apache Cassandra Certification', desc: 'Airline Streaming', sig: 'Big Data & AI', level: 'Beginner', dateEarned: '2019-03-03' },
         { title: 'Spark Streaming', desc: 'Sentiment Analysis', sig: 'Big Data & AI', level: 'Beginner', dateEarned: '2019-04-04' },
         { title: 'Azure ML', desc: 'Anomaly Detection', sig: 'Big Data & AI', level: 'Intermediate', dateEarned: '2019-05-05' },
         { title: 'GCP AutoML', desc: 'Facial Recognition', sig: 'Big Data & AI', level: 'Intermediate', dateEarned: '2019-06-06' },
         { title: 'Rand Lab', desc: 'Dummy Lab', sig: 'API', level: 'Advanced', dateEarned: '2019-07-07' }
 
-      ],
+      ]
     }
   },
   watch: {
