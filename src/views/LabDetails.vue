@@ -19,25 +19,12 @@
         <v-divider/>
       </v-list>
       <v-layout>
-        <vue-markdown>
-Heading
-=======
-
-SubHeading
-----------
-
-  * list item 1
-  * list item 2
-
-  This is a hyperlink to [Google](http://google.com).
-  ![alt text](/img/logo.82b9c7a5.png "Logo Title Text 1")
-  </vue-markdown>
-  <vue-markdown :source="markdownSource">
-  </vue-markdown>
-        <v-flex xs-12 class="display-3">
-            {{title}} {{$route.params.id}}
-            <div v-html="compiledMarkdown"></div>
-        </v-flex>
+      <vue-markdown :source="markdownSource">
+      </vue-markdown>
+      <v-flex xs-12 class="display-3">
+          {{title}} {{$route.params.id}}
+          <div v-html="compiledMarkdown"></div>
+      </v-flex>
       </v-layout>
   </v-layout>
 </template>
@@ -51,7 +38,7 @@ export default {
   },
   data: () => ({
     title: 'Lab Title',
-    markdownSource: "This is a hyperlink to [Google](http://google.com).",
+    markdownSource: '',
     items: [
       {
         text: 'Labs',
@@ -64,6 +51,21 @@ export default {
         href: 'breadcrumbs_link_2'
       }
     ]
-  })
+  }),
+  created: function() {
+    this.markdownSource = '\
+Heading \n\
+=======\n\
+\n\
+SubHeading\n\
+----------\n\
+\n\
+  * list item 1\n\
+  * list item 2\n\
+\n\
+  This is a hyperlink to [Google](http://google.com).\n\
+  ![alt text](/img/logo.82b9c7a5.png "Logo Title Text 1")'
+    
+  }
 }
 </script>
