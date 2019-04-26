@@ -1,5 +1,4 @@
 <style src="../assets/css/LabDetails.css" scoped>
- 
 </style>
 <template>
     <v-layout
@@ -11,7 +10,7 @@
         <v-list-tile avatar>
           <v-list-tile-title class="title">
             <router-link to="/" v-bind:class="{ returnLink: true}">
-              <v-icon>arrow_back</v-icon>    
+              <v-icon>arrow_back</v-icon>
               Return
             </router-link>
           </v-list-tile-title>
@@ -21,15 +20,23 @@
       <v-layout>
         <v-flex xs-12 class="display-3">
             {{title}} {{$route.params.id}}
+            <div v-html="compiledMarkdown"></div>
         </v-flex>
       </v-layout>
   </v-layout>
 </template>
 
+<script src="https://unpkg.com/marked@0.3.6"></script>
+<script src="https://unpkg.com/lodash@4.16.0"></script>
 <script>
 
 export default {
   components: {
+  },
+  computed: {
+    compiledMarkdown: function () {
+      return marked("# hello", { sanitize: true })
+    }
   },
   data: () => ({
     title: 'Lab Title',
