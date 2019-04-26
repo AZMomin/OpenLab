@@ -6,6 +6,7 @@
       tag="v-list"
       column
     >
+      <img src="../assets/logo.png">
       <v-list>
         <v-list-tile avatar>
           <v-list-tile-title class="title">
@@ -18,6 +19,21 @@
         <v-divider/>
       </v-list>
       <v-layout>
+        <vue-markdown>
+Heading
+=======
+
+SubHeading
+----------
+
+  * list item 1
+  * list item 2
+
+  This is a hyperlink to [Google](http://google.com).
+  ![alt text](/img/logo.82b9c7a5.png "Logo Title Text 1")
+  </vue-markdown>
+  <vue-markdown :source="markdownSource">
+  </vue-markdown>
         <v-flex xs-12 class="display-3">
             {{title}} {{$route.params.id}}
             <div v-html="compiledMarkdown"></div>
@@ -25,21 +41,17 @@
       </v-layout>
   </v-layout>
 </template>
-
-<script src="https://unpkg.com/marked@0.3.6"></script>
-<script src="https://unpkg.com/lodash@4.16.0"></script>
 <script>
-
+// vue markdown from here
+// https://www.npmjs.com/package/vue-markdown
+import VueMarkdown from 'vue-markdown'
 export default {
   components: {
-  },
-  computed: {
-    compiledMarkdown: function () {
-      return marked("# hello", { sanitize: true })
-    }
+    VueMarkdown
   },
   data: () => ({
     title: 'Lab Title',
+    markdownSource: "This is a hyperlink to [Google](http://google.com).",
     items: [
       {
         text: 'Labs',
