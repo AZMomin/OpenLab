@@ -8,12 +8,13 @@
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "icons": [
           { "label": "timeline", "tooltip": "Big Data & AI" }
-        ]
+        ],
+        "awardBadgeName": "Digital Badge Creator"
       },
       {
         "title": "AWS SageMaker", 
         "description": "Document Typing", 
-        "to": "/labs/emr", 
+        "to": "/labs/sagemaker", 
         "id": 1,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "icons": [
@@ -23,7 +24,7 @@
       {
         "title": "Apache Cassandra Certification", 
         "description": "Fundementals of Cassandra", 
-        "to": "/labs/emr", 
+        "to": "/labs/apachecassandra", 
         "id": 2,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "icons": [
@@ -33,7 +34,7 @@
       {
         "title": "Spark Streaming", 
         "description": "Sentiment Analysis", 
-        "to": "/labs/emr", 
+        "to": "/labs/spark", 
         "id": 3,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "icons": [
@@ -43,7 +44,7 @@
       {
         "title": "TensorFlow and deep learning, without a PhD", 
         "description": "Sentiment Analysis", 
-        "to": "/labs/emr", 
+        "to": "/labs/tensorflow", 
         "id": 4,
         "img": "https://www.tensorflow.org/images/tf_logo_social.png",
         "url": "https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0",
@@ -54,7 +55,7 @@
       {
         "title": "Simple Reinforcement Learning with Tensorflow", 
         "description": "Introductory series on reinforcement learning", 
-        "to": "/labs/emr", 
+        "to": "/labs/srtensorflow", 
         "id": 5,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0",
@@ -65,7 +66,7 @@
       {
         "title": "Titanic: Machine Learning from Disaster", 
         "description": "Introductory problem predicting survivability on the Titanic", 
-        "to": "/labs/emr", 
+        "to": "/labs/titanic", 
         "id": 6,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://www.kaggle.com/c/titanic",
@@ -76,7 +77,7 @@
       {
         "title": "Tensorflow: Keras", 
         "description": "Fundementals of Keras with Tensorflow", 
-        "to": "/labs/emr", 
+        "to": "/labs/tensorflowkeras", 
         "id": 7,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://www.tensorflow.org/guide/keras",
@@ -87,7 +88,7 @@
       {
         "title": "Apache Spark Tutorial", 
         "description": "Getting Started with Apache Spark on Databricks", 
-        "to": "/labs/emr", 
+        "to": "/labs/apachespark", 
         "id": 8,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://databricks.com/spark/getting-started-with-apache-spark/quick-start#spark-interfaces",
@@ -98,7 +99,7 @@
       {
         "title": "Classify movie reviews using tf.keras", 
         "description": "Learn how to classify movie reviews using TensorFlow and Keras", 
-        "to": "/labs/emr", 
+        "to": "/labs/moviekeras", 
         "id": 9,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://research.google.com/seedbank/seed/classify_movie_reviews_using_tfkeras",
@@ -109,7 +110,7 @@
       {
         "title": "Text generation using a RNN", 
         "description": "Text generation using a RNN with eager execution", 
-        "to": "/labs/emr",
+        "to": "/labs/rnn",
         "id": 10,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://research.google.com/seedbank/seed/text_generation_using_a_rnn_with_eager_execution",
@@ -120,7 +121,7 @@
       {
         "title": "Text generation using a RNN", 
         "description": "Text generation using a RNN with eager execution", 
-        "to": "/labs/emr",
+        "to": "/labs/rnn",
         "id": 10,
         "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
         "url": "https://research.google.com/seedbank/seed/text_generation_using_a_rnn_with_eager_execution",
