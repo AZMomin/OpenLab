@@ -43,6 +43,15 @@ export default {
   components: {
     VueMarkdown
   },
+  data: () => ({
+    title: 'Lab Title',
+    badgeResult: { criteriaNarrative: '' },
+    markdownSource: ''
+  }),
+  created: function () {
+    this.badgeResult = {}
+    this.getBadgesFromAPI()
+  },
   methods: {
     getBadgesFromAPI: function (event) {
       var routeId = this.$route.params.id
@@ -62,27 +71,6 @@ export default {
         console.log(error)
       }
     }
-  },
-  data: () => ({
-    title: 'Lab Title',
-    badgeResult: { criteriaNarrative: '' },
-    markdownSource: ''
-  }),
-  created: function () {
-    this.badgeResult = {}
-    this.getBadgesFromAPI()
-    this.markdownSource = '' +
-'Heading \n' +
-'=======\n' +
-'\n' +
-'SubHeading\n' +
-'----------\n' +
-'\n' +
-'  * list item 1\n' +
-'  * list item 2\n' +
-'\n' +
-'  This is a hyperlink to [Google](http://google.com).\n' +
-'  ![alt text](/img/logo.82b9c7a5.png "Logo Title Text 1")'
   }
 }
 </script>
