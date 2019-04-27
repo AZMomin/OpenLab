@@ -6,7 +6,6 @@
       tag="v-list"
       column
     >
-      <img src="../assets/logo.png">
       <v-list>
         <v-list-tile avatar>
           <v-list-tile-title class="title">
@@ -18,13 +17,18 @@
         </v-list-tile>
         <v-divider/>
       </v-list>
-      <v-layout>
-      <vue-markdown :source="badgeResult.description">
-      </vue-markdown>
-      <v-flex xs-12 class="display-3">
-          {{title}} {{$route.params.id}}
-      </v-flex>
-      </v-layout>
+      <v-container>
+        <v-layout row>
+          <v-flex xs-12>
+              {{title}} {{$route.params.id}}
+          </v-flex>
+        </v-layout>
+        <v-layout row>
+          <v-flex xs-12>
+            <vue-markdown :source="badgeResult.criteriaNarrative"></vue-markdown>
+          </v-flex>
+        </v-layout>
+      </v-container>
   </v-layout>
 </template>
 <script>
@@ -45,24 +49,15 @@ export default {
       var thisLabDetails = _.find(LocalLabData.new, function (lab) { return lab.to.includes(routeId) })
       try {
         var badgeNameToFind = thisLabDetails.awardBadgeName
-        if (badgeNameToFind.length > 0) {
-          Repository.getIssuerBadgeByBadgeName(badgeNameToFind)
-            .then(response => {
-              if (response.data) {
-                if (response.data.isSuccess) {
-                  this.badgeResult = response.data.badges[0]
-                // eslint-disable-next-line
-                } 
-                else {
-                  console.log(response.data.message)
-                }
-              }
-              console.log(response)
-            })
-            .catch(error => {
-              console.log('oh no!', error)
-            })
-        }
+        Repository.getIssuerBadgeByBadgeName(badgeNameToFind)
+          .then(response => {
+            console.log('badger search response:', response)
+            this.badgeResult = response.data.badges[0]
+            // eslint-disable-next-line
+          })
+          .catch(error => {
+            console.log('oh no!', error)
+          })
       } catch (error) {
         console.log(error)
       }
@@ -70,20 +65,8 @@ export default {
   },
   data: () => ({
     title: 'Lab Title',
-    badgeResult: { description: '' },
-    markdownSource: '',
-    items: [
-      {
-        text: 'Labs',
-        disabled: false,
-        href: '#/labs'
-      },
-      {
-        text: 'Lab Title',
-        disabled: true,
-        href: 'breadcrumbs_link_2'
-      }
-    ]
+    badgeResult: { criteriaNarrative: '' },
+    markdownSource: ''
   }),
   created: function () {
     this.badgeResult = {}
