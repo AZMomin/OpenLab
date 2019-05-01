@@ -8,16 +8,16 @@
     <v-layout row>
       <v-flex md5>
         <v-text-field
-              v-model="searchTerm"
-              label="Search "
-              solo
-              clearable
-              v-on:change="filter(`${searchTerm}`, `${selectedSigs}`, `${selectedLevel}`)"
-            >
-            <template v-slot:label>
-              <v-icon style="vertical-align: middle">search</v-icon>
-              Search
-            </template>
+          v-model="searchTerm"
+          label="Search "
+          solo
+          clearable
+          v-on:change="filter(`${searchTerm}`, `${selectedSigs}`, `${selectedLevel}`)"
+        >
+          <template v-slot:label>
+            <v-icon style="vertical-align: middle">search</v-icon>
+            Search
+          </template>
         </v-text-field>
       </v-flex>
       <v-flex xs3 md4>
@@ -68,70 +68,64 @@
     </v-layout>
     <v-divider></v-divider>
     <v-flex xs12 sm12 xl2>
-          <v-layout row wrap>
-            <v-flex
-              class="pa-1 pt-3"
-              v-for="lab in selectedLabs"
-              :key="lab.title"
-              xs12 sm6 md6 lg4
+      <v-layout row wrap>
+        <v-flex
+          class="pa-1 pt-3"
+          v-for="lab in selectedLabs"
+          :key="lab.title"
+          xs12 sm6 md6 lg4
+        >
+          <v-hover>
+            <v-card color="indigo darken-1" class="white--text"
+            slot-scope="{ hover }"
+            :class="`elevation-${hover ? 12 : 2}`"
+            height="100%"
+            :to="'/labs/' + lab.id"
             >
-              <v-hover>
-                <v-card color="indigo darken-1" class="white--text"
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                height="100%"
-                :to="lab.to"
-                >
-                  <v-layout row style="min-height:150px">
-                    <v-flex xs8>
-                      <v-card-title primary-title>
-                        <div>
-                          <div class="headline">{{lab.title}}</div>
-                          <div>{{lab.desc}}</div>
-                        </div>
-                      </v-card-title>
-                    </v-flex>
-                    <v-flex xs4>
-                      <v-img
-                        :src=lab.img
-                        height="125px"
-                        class="mt-3"
-                        contain
-                      ></v-img>
-                    </v-flex>
-                  </v-layout>
-                  <v-card-actions class="px-1 py-3">
-                    <v-tooltip top>
-                      <template v-slot:activator="{ on }">
-                        <v-chip outline color="teal" class="ml-2" v-on="on">
-                          <v-icon color="deep-orange lighten-1">timeline</v-icon>
-                        </v-chip>
-                      </template>
-                      <span>Big Data and AI</span>
-                    </v-tooltip>
-                    <v-chip outline color="teal" class="ml-2">
-                      <v-icon color="deep-orange lighten-1">cloud</v-icon>
+              <v-layout row style="min-height:150px">
+                <v-flex xs8>
+                  <v-card-title primary-title>
+                    <div>
+                      <div class="headline">{{lab.title}}</div>
+                      <div>{{lab.description}}</div>
+                    </div>
+                  </v-card-title>
+                </v-flex>
+                <v-flex xs4>
+                  <v-img
+                    :src=lab.img
+                    height="125px"
+                    class="mt-3"
+                    contain
+                  ></v-img>
+                </v-flex>
+              </v-layout>
+              <v-card-actions class="px-1 py-3">
+                <v-tooltip
+                  top
+                  v-for="icon in lab.icons"
+                  :key="icon.label">
+                  <template v-slot:activator="{ on }">
+                    <v-chip outline color="teal" class="ml-2" v-on="on">
+                      <v-icon :color="icon.color">{{icon.label}}</v-icon>
                     </v-chip>
-                    <v-chip outline color="teal" class="ml-2">
-                      <v-icon color="#ffd700">star</v-icon>
-                    </v-chip>
-                  </v-card-actions>
-                </v-card>
-              </v-hover>
-            </v-flex>
-          </v-layout>
+                  </template>
+                  <span> {{icon.tooltip}} </span>
+                </v-tooltip>
+              </v-card-actions>
+            </v-card>
+          </v-hover>
+        </v-flex>
+      </v-layout>
     </v-flex>
   </v-container>
 </template>
 
 <script>
-// import HelloWorld from '../components/HelloWorld'
+import labs from '../data/labs.json'
 import _ from 'lodash'
 import Fuse from 'fuse.js'
 export default {
-  // components: {
-  //   HelloWorld
-  // }
   data: function () {
     return {
       options: {
@@ -145,7 +139,7 @@ export default {
         minMatchCharLength: 1,
         keys: [
           'title',
-          'desc'
+          'description'
         ]
       },
       selectedSigs: [],
@@ -166,21 +160,13 @@ export default {
         'Intermediate',
         'Advanced'
       ],
-      labs: [
-        { title: 'AWS EMR', desc: 'Sentiment Analysis', sig: 'Big Data & AI', level: 'Beginner', to: '/labs/emr', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png' },
-        { title: 'AWS SageMaker', desc: 'Document Typing', sig: 'Big Data & AI', level: 'Intermediate', to: '/labs/sagemaker', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_77e204df-a70c-44ab-b5ff-c9813d8e8361.png' },
-        { title: 'Apache Cassandra Certification', desc: 'Airline Streaming', sig: 'Big Data & AI', level: 'Beginner', to: '/labs/cassandra', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_fcc56026-ca72-49a0-82b3-ad66b1cbb1e4.png' },
-        { title: 'Spark Streaming', desc: 'Sentiment Analysis', sig: 'Big Data & AI', level: 'Beginner', to: '/labs/spark', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_77e204df-a70c-44ab-b5ff-c9813d8e8361.png' },
-        { title: 'Azure ML', desc: 'Anomaly Detection', sig: 'Big Data & AI', level: 'Intermediate', to: '/labs/spark', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_77e204df-a70c-44ab-b5ff-c9813d8e8361.png' },
-        { title: 'GCP AutoML', desc: 'Facial Recognition', sig: 'Big Data & AI', level: 'Intermediate', to: '/labs/spark', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_77e204df-a70c-44ab-b5ff-c9813d8e8361.png' },
-        { title: 'Rand Lab', desc: 'Dummy Lab', sig: 'API', level: 'Advanced', to: '/labs/spark', img: 'https://media.us.badgr.io/uploads/badges/issuer_badgeclass_77e204df-a70c-44ab-b5ff-c9813d8e8361.png' }
-
-      ],
+      labs: [],
       selectedLabs: []
     }
   },
   created: function () {
-    this.selectedLabs = this.labs
+    this.labs = labs
+    this.selectedLabs = labs
   },
   methods: {
     search: function (term) {

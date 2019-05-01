@@ -7,7 +7,6 @@
       app
     >
     <v-img
-      :src="image"
       height="100%"
     >
       <v-layout
@@ -31,7 +30,6 @@
           v-for="(link, i) in links"
           :key="i"
           :to="link.to"
-          :active-class="color"
           avatar
           class="v-list-item"
         >
@@ -59,7 +57,6 @@
               v-for="(sig, i) in sigs"
               :key="i"
               :to="'/sigs' + sig.to"
-              :active-class="color"
               avatar
               class="v-list-item"
               style="padding-left: 45px"
@@ -97,7 +94,6 @@ export default {
   },
   data () {
     return {
-      //
       drawer: false,
       menu: [
         { icon: 'dashboard', title: 'Home', path: '' },
