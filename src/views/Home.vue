@@ -51,14 +51,11 @@
                   :key="icon.label">
                   <template v-slot:activator="{ on }">
                     <v-chip outline color="teal" class="ml-2" v-on="on">
-                      <v-icon color="deep-orange lighten-1">{{icon.label}}</v-icon>
+                      <v-icon :color="icon.color">{{icon.label}}</v-icon>
                     </v-chip>
                   </template>
                   <span> {{icon.tooltip}} </span>
                 </v-tooltip>
-                <v-chip outline color="teal" class="ml-2" v-on="on">
-                  <v-icon color="#ffd700">star</v-icon>
-                </v-chip>
               </v-card-actions>
             </v-card>
           </v-hover>
@@ -113,7 +110,7 @@
                   :key="icon.label">
                   <template v-slot:activator="{ on }">
                     <v-chip outline color="teal" class="ml-2" v-on="on">
-                      <v-icon color="deep-orange lighten-1">{{icon.label}}</v-icon>
+                      <v-icon :color="icon.color">{{icon.label}}</v-icon>
                     </v-chip>
                   </template>
                   <span> {{icon.tooltip}} </span>
@@ -129,13 +126,18 @@
 
 <script>
 import data from '../data/home.json'
-console.log(data)
+import labs from '../data/labs.json'
+import _ from 'lodash'
+
 export default {
   // components: {
   //   LabCard
   // },
   created: function () {
-    this.labs = data
+    this.labs = {
+      new: _.filter(labs, lab => _.includes(data.new, lab.id)),
+      trending: _.filter(labs, lab => _.includes(data.trending, lab.id))
+    }
   },
   data: () => ({
     labs: []

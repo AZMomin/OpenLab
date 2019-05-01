@@ -1,0 +1,228 @@
+[
+    {
+      "title": "AWS EMR", 
+      "description": "Sentiment Analysis", 
+      "to": "/labs/emr", 
+      "id": 0,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "cloud", "tooltip": "Cloud Lab", "color": "deep-orange lighten-1" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "AWS SageMaker", 
+      "description": "Document Typing", 
+      "to": "/labs/emr", 
+      "id": 1,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "cloud", "tooltip": "Cloud Lab", "color": "deep-orange lighten-1" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Apache Cassandra Certification", 
+      "description": "Fundementals of Cassandra", 
+      "to": "/labs/emr", 
+      "id": 2,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "verified_user", "tooltip": "Big Data & AI", "color": "yellow lighten-1" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Spark Streaming", 
+      "description": "Sentiment Analysis", 
+      "to": "/labs/emr", 
+      "id": 3,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "TensorFlow and deep learning, without a PhD", 
+      "description": "Sentiment Analysis", 
+      "to": "/labs/emr", 
+      "id": 4,
+      "img": "https://www.tensorflow.org/images/tf_logo_social.png",
+      "url": "https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Simple Reinforcement Learning", 
+      "description": "Introductory series on reinforcement learning", 
+      "to": "/labs/emr", 
+      "id": 5,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "url": "https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Titanic: Machine Learning from Disaster", 
+      "description": "Introductory problem predicting survivability on the Titanic", 
+      "to": "/labs/emr", 
+      "id": 6,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "url": "https://www.kaggle.com/c/titanic",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Tensorflow: Keras", 
+      "description": "Fundementals of Keras with Tensorflow", 
+      "to": "/labs/emr", 
+      "id": 7,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "url": "https://www.tensorflow.org/guide/keras",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Apache Spark Tutorial", 
+      "description": "Getting Started with Apache Spark on Databricks", 
+      "to": "/labs/emr", 
+      "id": 8,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "url": "https://databricks.com/spark/getting-started-with-apache-spark/quick-start#spark-interfaces",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Classify movie reviews using tf.keras", 
+      "description": "Learn how to classify movie reviews using TensorFlow and Keras", 
+      "to": "/labs/emr", 
+      "id": 9,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "url": "https://research.google.com/seedbank/seed/classify_movie_reviews_using_tfkeras",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    },
+    {
+      "title": "Text generation using a RNN", 
+      "description": "Text generation using a RNN with eager execution", 
+      "to": "/labs/emr",
+      "id": 10,
+      "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
+      "url": "https://research.google.com/seedbank/seed/text_generation_using_a_rnn_with_eager_execution",
+      "icons": [
+        { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+        { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+      ],
+      "technologies": [
+        { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+        { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+        { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+        { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+        { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+        { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+
+      ]
+    }
+  ]
