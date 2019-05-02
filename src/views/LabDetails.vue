@@ -108,6 +108,7 @@ export default {
   methods: {
     getBadgesFromAPI: function (event) {
       var routeId = this.$route.params.id
+      // eslint-disable-next-line
       var thisLabDetails = _.find(labs, function (lab) { return lab.id == routeId })
       try {
         console.log('lab details: ', thisLabDetails)
