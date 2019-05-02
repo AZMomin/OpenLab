@@ -24,14 +24,14 @@
             slot-scope="{ hover }"
             :class="`elevation-${hover ? 12 : 2}`"
             height="100%"
-            :to="lab.to"
+            :to="'/labs/' + lab.id"
             >
               <v-layout row style="min-height:150px">
                 <v-flex xs8>
                   <v-card-title primary-title>
                     <div>
                       <div class="headline">{{lab.title}}</div>
-                      <div>{{lab.desc}}</div>
+                      <div>{{lab.description}}</div>
                     </div>
                   </v-card-title>
                 </v-flex>
@@ -83,14 +83,14 @@
             slot-scope="{ hover }"
             :class="`elevation-${hover ? 12 : 2}`"
             height="100%"
-            :to="lab.to"
+            :to="'/labs/' + lab.id"
             >
               <v-layout row style="min-height:150px">
                 <v-flex xs8>
                   <v-card-title primary-title>
                     <div>
                       <div class="headline">{{lab.title}}</div>
-                      <div>{{lab.desc}}</div>
+                      <div>{{lab.description}}</div>
                     </div>
                   </v-card-title>
                 </v-flex>

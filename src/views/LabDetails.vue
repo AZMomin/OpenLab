@@ -108,7 +108,7 @@ export default {
   methods: {
     getBadgesFromAPI: function (event) {
       var routeId = this.$route.params.id
-      var thisLabDetails = _.find(labs, function (lab) { return lab.to.includes(routeId) })
+      var thisLabDetails = _.find(labs, function (lab) { return lab.id == routeId })
       try {
         console.log('lab details: ', thisLabDetails)
         var badgeNameToFind = thisLabDetails.awardBadgeName
