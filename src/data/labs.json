@@ -5,7 +5,6 @@
       "to": "/labs/emr", 
       "id": 0,
       "img": "https://media.us.badgr.io/uploads/badges/issuer_badgeclass_053c8194-da0d-4c9f-bf7b-3c94047b2a4f.png",
-      "awardBadgeName": "emr",
       "icons": [
         { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
         { "label": "cloud", "tooltip": "Cloud Lab", "color": "deep-orange lighten-1" }

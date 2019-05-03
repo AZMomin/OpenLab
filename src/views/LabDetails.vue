@@ -107,12 +107,12 @@ export default {
   },
   methods: {
     getBadgesFromAPI: function (event) {
-      var routeId = this.$route.params.id
+      let routeId = this.$route.params.id
       // eslint-disable-next-line
-      var thisLabDetails = _.find(labs, function (lab) { return lab.id == routeId })
+      let thisLabDetails = _.find(labs, function (lab) { return lab.id == routeId })
       try {
         console.log('lab details: ', thisLabDetails)
-        var badgeNameToFind = thisLabDetails.awardBadgeName
+        let badgeNameToFind = thisLabDetails.awardBadgeName
         Repository.getIssuerBadgeByBadgeName(badgeNameToFind)
           .then(response => {
             console.log('badger search response:', response)
@@ -141,5 +141,9 @@ export default {
 <style>
 .border-divider {
   border-right: solid 1px lightgray;
+}
+a.returnLink {
+    text-decoration: none;
+    color: black
 }
 </style>

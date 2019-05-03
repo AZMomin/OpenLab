@@ -99,11 +99,8 @@ export default {
       Repository.getIssuerBadges()
         .then(response => {
           console.log('badger search response:', response)
-          // this timeout is just so we can see the spinner working
-          setTimeout(() => {
-            this.labs.remote = response.data.badges
-            this.loading = false
-          }, 2000)
+          this.labs.remote = response.data.badges
+          this.loading = false
         })
     }
   },

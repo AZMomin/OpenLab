@@ -15,11 +15,11 @@ export default {
     })
   },
   getIssuerBadgeByBadgeName (badgeName) {
-    var newAxios = axios.create({ baseURL: baseUrl })
+    let newAxios = axios.create({ baseURL: baseUrl })
     return newAxios.get(issuerBadgeDetailsResource + badgeName)
   },
   getIssuerBadges () {
-    var newAxios = axios.create({ baseURL: baseUrl })
+    let newAxios = axios.create({ baseURL: baseUrl })
     return newAxios.get(issuerBadgesResource)
   }
   // post(payload){
