@@ -14,6 +14,7 @@
         tag="v-list"
         column
       >
+      <v-list>
         <v-list-tile avatar>
           <v-list-tile-avatar
             color="white"
@@ -69,7 +70,7 @@
               />
             </v-list-tile>
         </v-list-group>
-
+      </v-list>
         </v-layout>
       </v-img>
     </v-navigation-drawer>
