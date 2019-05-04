@@ -1,5 +1,3 @@
-<style src="../assets/css/LabDetails.css" scoped>
-</style>
 <template>
   <v-container>
     <v-layout row wrap>

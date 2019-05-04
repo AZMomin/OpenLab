@@ -1,0 +1,62 @@
+[
+    {
+        "entityId": "1sZCSZcAT4KPvGw0-L3D4Q",
+        "icons": [
+            { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+            { "label": "verified_user", "tooltip": "Certification", "color": "yellow lighten-1" }
+          ],
+        "level": "Beginner",
+        "sig": "Big Data & AI",
+        "technologies": []
+    },
+    {
+        "entityId": "2Tn9v5_jQKitUIYMnQubJg",
+        "icons": [
+            { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+            { "label": "cloud", "tooltip": "Cloud Lab", "color": "deep-orange lighten-1" }
+          ],
+        "level": "Beginner",
+        "sig": "Big Data & AI",
+        "technologies": []
+    },
+    {
+        "entityId": "Gyl_MYqDQbiPliLMrtVceA",
+        "icons": [
+            { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+            { "label": "cloud", "tooltip": "Cloud Lab", "color": "deep-orange lighten-1" }
+          ],
+        "level": "Beginner",
+        "sig": "Big Data & AI",
+        "technologies": []
+    },
+    {
+        "entityId": "KfT3_OcNT_6n7mvXs6q3Jw",
+        "icons": [
+            { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+            { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+          ],
+        "level": "Beginner",
+        "sig": "Big Data & AI",
+        "technologies": []
+    },
+    {
+        "entityId": "4XvqnRMnRFCbyIOuVm3EUg",
+        "icons": [
+            { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+            { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+          ],
+        "level": "Beginner",
+        "sig": "Big Data & AI",
+        "technologies": []
+    },
+    {
+        "entityId": "BsAFQ9A_QZ6wDNerG0w6ww",
+        "icons": [
+            { "label": "timeline", "tooltip": "Big Data & AI", "color": "red lighten-1" },
+            { "label": "language", "tooltip": "3rd-Party Resource", "color": "grey lighten-2" }
+          ],
+        "level": "Intermediate",
+        "sig": "Big Data & AI",
+        "technologies": []
+    }
+]

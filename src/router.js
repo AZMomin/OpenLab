@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Badges from './views/Badges.vue'
+// import Home from './views/Home.vue'
+import Users from './views/Users.vue'
 import Labs from './views/Labs.vue'
 import LabDetails from './views/LabDetails.vue'
 import Sigs from './views/Sigs.vue'
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'labs',
+      component: Labs
     },
     {
       path: '/about',
@@ -24,15 +24,15 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/badges',
-      name: 'badges',
-      component: Badges
+      path: '/users',
+      name: 'users',
+      component: Users
     },
-    {
-      path: '/labs',
-      name: 'labs',
-      component: Labs
-    },
+    // {
+    //   path: '/labs',
+    //   name: 'labs',
+    //   component: Labs
+    // },
     {
       path: '/sigs/:id',
       component: Sigs

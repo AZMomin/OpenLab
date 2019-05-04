@@ -95,37 +95,28 @@ export default {
   data () {
     return {
       drawer: false,
-      menu: [
-        { icon: 'dashboard', title: 'Home', path: '' },
-        { icon: 'note', title: 'Labs', path: 'labs' },
-        { icon: 'star', title: 'Badges', path: 'badges' }
-      ],
-      items: [
-        { title: 'Home', icon: 'dashboard' },
-        { title: 'About', icon: 'question_answer' }
-      ],
       right: null,
       links: [
+        // {
+        //   to: '/',
+        //   icon: 'dashboard',
+        //   text: 'Home'
+        // },
         {
           to: '/',
-          icon: 'dashboard',
-          text: 'Home'
-        },
-        {
-          to: '/labs',
           icon: 'class',
           text: 'Labs'
         },
         {
-          to: '/badges',
+          to: '/users',
           icon: 'star',
-          text: 'Badges'
+          text: 'Users'
         }
       ],
       responsive: false,
       sigs: [
         { name: 'API', icon: 'extension', to: '/api', disabled: true },
-        { name: 'Big Data & AI', icon: 'timeline', to: '/ai', disabled: false },
+        { name: 'Big Data & AI', icon: 'timeline', to: '/ai', disabled: true },
         { name: 'Cloud', icon: 'cloud', to: '/cloud', disabled: true },
         { name: 'Commerce', icon: 'shopping_cart', to: '/commerce', disabled: true },
         { name: 'DevOps', icon: 'build', to: '/devops', disabled: true },

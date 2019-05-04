@@ -49,7 +49,7 @@
       <v-expansion-panel expand>
         <v-expansion-panel-content
           v-for="user in selectedUsers"
-          :key="user"
+          :key="user.name"
         >
           <template v-slot:header>
             <div>
