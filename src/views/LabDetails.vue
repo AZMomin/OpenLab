@@ -30,7 +30,7 @@
     <v-divider class="mt-4" v-if="!loading"/>
     <v-layout row v-if="!loading">
       <v-flex xs10 class="border-divider" mr-3 pt-3>
-        <div xs12 class="display-1"><vue-markdown :source="badgeCriteriaNarrative"></vue-markdown></div>
+        <div xs12><vue-markdown :source="badgeCriteriaNarrative"></vue-markdown></div>
       </v-flex>
       <v-flex xs2 pt-3>
         <div xs12 class="headline">Technologies</div>

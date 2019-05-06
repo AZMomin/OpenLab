@@ -8,12 +8,8 @@
         "level": "Beginner",
         "sig": "Big Data & AI",
         "technologies": [
-            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
-            { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
-            { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
-            { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
-            { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
-            { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+            { "title": "Cassandra", "img": "https://cdn.freebiesupply.com/logos/thumbs/2x/cassandra-logo.png" },
+            { "title": "Datastax", "img": "https://lh3.googleusercontent.com/LAcxOtyTz46Wx215MzpmI7Mt_TX0So0umhthvFvNcd2OlaO6no1vrLDLMQp6WkLgHreqLWcCHYg_=w240-h240" }
         ]
     },
     {
@@ -69,7 +65,9 @@
           ],
         "level": "Beginner",
         "sig": "Big Data & AI",
-        "technologies": []
+        "technologies": [
+            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" }
+        ]
     },
     {
         "entityId": "BsAFQ9A_QZ6wDNerG0w6ww",
@@ -79,6 +77,10 @@
           ],
         "level": "Intermediate",
         "sig": "Big Data & AI",
-        "technologies": []
+        "technologies": [
+            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+            { "title": "TensorFlow", "img": "https://avatars2.githubusercontent.com/u/15658638?s=400&v=4" },
+            { "title": "OpenAI Gym", "img": "https://gym.openai.com/assets/dist/home/header/home-icon-54c30e2345.svg" }
+        ]
     }
 ]
