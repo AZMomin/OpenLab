@@ -1,11 +1,25 @@
 <template>
   <v-container>
-    <v-layout row wrap>
-      <v-flex xs8>
+    <!-- loader -->
+    <v-flex text-xs-center class="mt-4">
+      <pulse-loader :loading="loading" :color="color"></pulse-loader>
+    </v-flex>
+    <v-layout row wrap v-if="!loading">
+      <v-flex xs9>
         <div xs12 class="display-3"> {{ labTitle }} </div>
         <div xs12 class="headline"> {{ labDescription }} </div>
+        <v-btn
+          :loading="loading3"
+          :disabled="loading3"
+          color="success"
+          class="white--text"
+          :href="this.lab.criteriaUrl"
+        >
+          View Resources
+          <v-icon right dark>link</v-icon>
+        </v-btn>
       </v-flex>
-      <v-flex xs4>
+      <v-flex xs3>
         <v-img
           :src=labImg
           height="150px"
@@ -13,12 +27,12 @@
         ></v-img>
       </v-flex>
     </v-layout>
-    <v-divider class="mt-4"/>
-    <v-layout row>
-      <v-flex xs9 class="border-divider" mr-3>
+    <v-divider class="mt-4" v-if="!loading"/>
+    <v-layout row v-if="!loading">
+      <v-flex xs10 class="border-divider" mr-3 pt-3>
         <div xs12 class="display-1"><vue-markdown :source="badgeCriteriaNarrative"></vue-markdown></div>
       </v-flex>
-      <v-flex xs3>
+      <v-flex xs2 pt-3>
         <div xs12 class="headline">Technologies</div>
         <v-list-tile
           v-for="tech in labTechnologies"
@@ -43,17 +57,16 @@
 </template>
 <script>
 
-import labs from '../data/labs.json'
 import _ from 'lodash'
-// vue markdown from here
-// https://www.npmjs.com/package/vue-markdown
 import VueMarkdown from 'vue-markdown'
 import Repository from '../scripts/repository.js'
-// import LocalLabData from '../data/home.json'
+import metadata from '../data/lab_metadata.json'
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 
 export default {
   components: {
-    VueMarkdown
+    VueMarkdown,
+    PulseLoader
   },
   created: function () {
     this.getBadgesFromAPI()
@@ -61,7 +74,7 @@ export default {
   computed: {
     labTitle: function () {
       try {
-        return this.lab.title
+        return this.lab.name
       } catch (error) {
         return ''
       }
@@ -75,7 +88,7 @@ export default {
     },
     labImg: function () {
       try {
-        return this.lab.img
+        return this.lab.image
       } catch (error) {
         return ''
       }
@@ -100,26 +113,24 @@ export default {
       lab: {},
       title: 'Lab Title',
       badgeResult: {},
-      markdownSource: ''
+      markdownSource: '',
+      color: '#3949ab',
+      loading: true
     }
   },
   methods: {
     getBadgesFromAPI: function (event) {
-      let routeId = this.$route.params.id
-      // eslint-disable-next-line
-      let thisLabDetails = _.find(labs, function (lab) { return lab.id == routeId })
+      let badgeId = this.$route.params.id
       try {
-        console.log('lab details: ', thisLabDetails)
-        let badgeNameToFind = thisLabDetails.awardBadgeName
-        Repository.getIssuerBadgeByBadgeName(badgeNameToFind)
+        Repository.getIssuerBadgeByBadgeId(badgeId)
           .then(response => {
-            console.log('badger search response:', response)
+            // console.log(response)
             this.badgeResult = response.data.badges[0]
-            this.lab = _.find(labs, lab => lab.id === parseInt(this.$route.params.id))
-            // eslint-disable-next-line
+            this.lab = this.addMetadata(this.badgeResult, metadata)
+            this.loading = false
           })
           .catch(error => {
-            console.log('oh no!', error)
+            console.error(error)
           })
       } catch (error) {
         console.log(error)
@@ -131,6 +142,9 @@ export default {
       } catch (error) {
         return ''
       }
+    },
+    addMetadata: function (lab, meta) {
+      return _.assign(lab, _.find(meta, { entityId: lab.entityId }))
     }
   }
 }

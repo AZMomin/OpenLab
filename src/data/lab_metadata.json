@@ -7,7 +7,14 @@
           ],
         "level": "Beginner",
         "sig": "Big Data & AI",
-        "technologies": []
+        "technologies": [
+            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+            { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+            { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+            { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+            { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+            { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+        ]
     },
     {
         "entityId": "2Tn9v5_jQKitUIYMnQubJg",
@@ -17,7 +24,14 @@
           ],
         "level": "Beginner",
         "sig": "Big Data & AI",
-        "technologies": []
+        "technologies": [
+            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+            { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+            { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+            { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" },
+            { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+            { "title": "Apache Hadoop", "img": "https://cdn.worldvectorlogo.com/logos/hadoop.svg" }
+        ]
     },
     {
         "entityId": "Gyl_MYqDQbiPliLMrtVceA",
@@ -27,7 +41,12 @@
           ],
         "level": "Beginner",
         "sig": "Big Data & AI",
-        "technologies": []
+        "technologies": [
+            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" },
+            { "title": "Jupyter", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" },
+            { "title": "SciKit Learn", "img": "https://avatars2.githubusercontent.com/u/365630?v=4" },
+            { "title": "AWS", "img": "https://cdn.armor.com/app/uploads/2019/03/aws-logo.png" }
+        ]
     },
     {
         "entityId": "KfT3_OcNT_6n7mvXs6q3Jw",
@@ -37,7 +56,10 @@
           ],
         "level": "Beginner",
         "sig": "Big Data & AI",
-        "technologies": []
+        "technologies": [
+            { "title": "Apache Spark", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1280px-Apache_Spark_logo.svg.png" },
+            { "title": "Python", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png" }
+        ]
     },
     {
         "entityId": "4XvqnRMnRFCbyIOuVm3EUg",

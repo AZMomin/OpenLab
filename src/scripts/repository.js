@@ -6,6 +6,8 @@ const axios = require('axios')
 const baseUrl = 'https://badgrapi.azurewebsites.net/api'
 const issuerBadgesResource = '/Badge/IssuerBadges'
 const issuerBadgeDetailsResource = '/Badge/BadgeDetails/'
+const issuerAssertions = '/Badge/IssuerAssertions'
+const issuerBadgeDetailsById = 'Badge/BadgeDetailsById/'
 
 export default {
   createConn: function () {
@@ -21,6 +23,14 @@ export default {
   getIssuerBadges () {
     let newAxios = axios.create({ baseURL: baseUrl })
     return newAxios.get(issuerBadgesResource)
+  },
+  getIssuerAssertionss () {
+    let newAxios = axios.create({ baseURL: baseUrl })
+    return newAxios.get(issuerAssertions)
+  },
+  getIssuerBadgeByBadgeId (badgeId) {
+    let newAxios = axios.create({ baseURL: baseUrl })
+    return newAxios.get(issuerBadgeDetailsById + badgeId)
   }
   // post(payload){
   //     Repository = createConn()
